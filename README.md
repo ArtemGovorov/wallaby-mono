@@ -1,5 +1,5 @@
 # wallaby-mono
-A repository that demonstrates a bug or at lest unexpected behavior with wallaby and a mono repo.
+A repository that demonstrates a bug or at least unexpected behavior with wallaby and a mono repo.
 
 # installation
 ```
