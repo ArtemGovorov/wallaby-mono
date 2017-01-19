@@ -15,3 +15,5 @@ Error: Cannot find module 'chai'
 at Object.<anonymous> test/test.js:1:0
 ```
 I believe this is because it does not allow requires to traverse upwards to find chai at the root of the repository.
+
+However, running `npm test` from /packages/wallaby-mono-a does work.
