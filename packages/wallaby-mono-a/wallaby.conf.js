@@ -19,5 +19,10 @@ module.exports = function (wallaby) {
     setup: function () {
       window.__moduleBundler.loadTests();
     },
+
+    env: {
+      type: 'browser',
+      kind: 'electron',
+    },
   };
 };
