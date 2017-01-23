@@ -1,15 +1,23 @@
+var wallabyWebpack = require('wallaby-webpack');
+var wallabyPostprocessor = wallabyWebpack({
+    entry: 'test/test.js',
+  }
+);
+
 module.exports = function (wallaby) {
   return {
     files: [
-      'src/**/*.js'
+      { pattern: 'src/**/*.js', load: false }
     ],
 
     tests: [
-      'test/**/*.js'
+      { pattern: 'test/**/*.js', load: false }
     ],
 
-    env: {
-      type: 'node'
-    }
+    postprocessor: wallabyPostprocessor,
+
+    setup: function () {
+      window.__moduleBundler.loadTests();
+    },
   };
 };

@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "wallaby-webpack": "0.0.31",
+    "webpack": "^1.14.0"
+  }
 }
