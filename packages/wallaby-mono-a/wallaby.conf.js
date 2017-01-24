@@ -1,6 +1,8 @@
 var wallabyWebpack = require('wallaby-webpack');
 var wallabyPostprocessor = wallabyWebpack({
-    entry: 'test/test.js',
+    resolve: {
+      modulesDirectories: [require('path').join(__dirname, '../../node_modules')]
+    }
   }
 );
 
